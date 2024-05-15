@@ -17,8 +17,20 @@ export function Home() {
         setParticipantName('')
     }
     function handleParticipantRemove(name: string) {
-        console.log("ok");
+        
+        Alert.alert('Remover',`Reover o participante ${name}`,
+            [
+                {
+                    text:'Sim',
+                    onPress:()=>setParticipants(prevState =>prevState.filter(participant=>participant !== name))
 
+                },
+                {
+                    text:'Não',
+                    style:'cancel'
+                }
+            ]
+        )
     }
 
     return (
