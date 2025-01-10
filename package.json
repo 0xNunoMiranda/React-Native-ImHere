@@ -17,6 +17,7 @@
     "@expo/metro-runtime": "~3.2.1"
   },
   "devDependencies": {
+    "gh-pages":"^6.3.0",
     "@babel/core": "^7.20.0",
     "@types/react": "~18.2.45",
     "@types/react-native": "^0.73.0",
